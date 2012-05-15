@@ -79,9 +79,15 @@ class BBCWeather {
   /**
    * feeds host is protected - so we are always accessing the BBc feed.
    *
+   * Host can be open.live.bbc.co.uk OR newsrss.bbc.co.uk
+   *
+   * e.g. newsrss.bbc.co.uk/weather/forecast/2579/Next3DaysRSS.xml
+   * OR open.live.bbc.co.uk/weather/feeds/en/2643743/3dayforecast.rss
+   *
+   *
    * @var string
    */
-  protected $sFeedHost = 'open.live.bbc.co.uk';
+  protected $sFeedHost = 'newsrss.bbc.co.uk';
 
 
   /**
@@ -92,7 +98,8 @@ class BBCWeather {
    *
    * @var string
    */
-  public $sFeedUri = '/weather/feeds/en/2643743/3dayforecast.rss';
+  public $sFeedUri = '/weather/forecast/2579/Next3DaysRSS.xml';
+
 
 
   /**
